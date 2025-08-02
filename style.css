@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #27922e;
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+#track {
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 200px;
+  border-top: 3px dashed #fff;
+  border-bottom: 3px dashed #fff;
+  overflow: hidden;
+  background: #4caf50;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px #2e7d32;
+}
+
+.animal {
+  position: absolute;
+  font-size: 3rem;
+  left: 0;
+  user-select: none;
+  /* smooth movement */
+  transition: left 3s ease-in-out;
+}
+
+#turtle { top: 20px; }
+#rabbit { top: 80px; }
+#snail { top: 140px; }
+
+#winner {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-height: 3em;
+}
+
+/* Flip emoji horizontally to face right */
+.right-facing {
+  display: inline-block;
+  transform: scaleX(-1);
+}
